@@ -1,0 +1,218 @@
+/* -----------sheard style --------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #F948B2;
+    border-radius: 25px;
+    border: 0px;
+    padding: 21px 40px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+/* ------------header manu item start----------- */
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+}
+.logo-text{
+    color: #0b0223;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.logo-primary-color{
+    color: #F948B2;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    background-color: #fff;
+    align-items: center;
+}
+.main-icons{
+    display: flex;
+    align-items: center;
+}
+.main-menu ul{
+    display: flex;
+}
+.main-menu li{
+    list-style: none;
+    padding-right: 20px;
+}
+.main-menu a{
+    text-decoration: none;
+    color: #3c354f;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.icons-menu{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 15px;
+    color: #3c354f;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.icons-menu .fa-youtube{
+    color: red;
+}
+.icons-menu i{
+    padding-right: 10px;
+}
+
+/* banner section style start */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.banner-content{
+    background-image: url('../images/Group 14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0px;
+}
+.banner-title{
+    color: #0b0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-focus-title{
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #F948B2;
+}
+.banner-description{
+    color: #534c64;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.banner-description li{
+    list-style: none;
+}
+.banner-img, .banner-content{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+}
+.go-rogue{
+    color: #fff;
+    background-color: #4EC5F7;
+    border-radius: 25px;
+    border: 0px;
+    padding: 21px 40px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+/* banner section style end */
+/* ---------------Online game section style start---------- */
+.online-game-item{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.card{
+    width: 300px;
+    height: 300px;
+}
+.card img{
+    width: 100%;
+}
+.online-game{
+    margin: 100px 0px;
+}
+.section-title{
+    color: #0b0223;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+.section-description{
+    color: #534c64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0px;
+}
+.card-description{
+    padding-top: 20px;
+}
+/* ---------------Online game section style end---------- */
+
+
+
+/* -------------------Responsive layout----------- */
+/* -------------------Responsive layout on mobile----------- */
+@media screen and (max-width:576px) {
+    .nav,
+    .main-icons{
+        flex-direction: column;
+    }
+    .main-menu{
+        padding: 50px 0px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content,
+    .banner-img{
+        width: 100%;
+    }
+    .banner-content{
+        padding-left: 30px;
+    }
+    .online-game-item{
+        display: grid;
+        gap: 150px;
+    }
+    
+}
+
+/* -------------------Responsive layout on Tablet----------- */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .nav,
+    .main-icons{
+        flex-direction: column;
+    }
+    .main-menu{
+        padding: 50px 0px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-content,
+    .banner-img{
+        width: 100%;
+    }
+    .banner-content{
+        padding-left: 30px;
+    }
+    .online-game-item{
+        display: grid;
+        row-gap: 150px ;
+    } 
+    
+
+}
