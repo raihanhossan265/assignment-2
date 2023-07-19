@@ -6,7 +6,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 main{
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 .btn-primary{
@@ -160,14 +160,74 @@ header{
     padding-top: 20px;
 }
 /* ---------------Online game section style end---------- */
+/* ------------Play-instant section style start---------------- */
+.play-game-container{
+    display: flex;
+    align-items: center;
+    margin: 150px 0px;
+    gap: 160px;
+}
+.pay-game-content{
+    text-align: right;
+    /* padding-right: 200px; */
+}
+.pay-game-title{
+    font-size: 3rem;
+    color: #0b0223;
+    font-weight: 700;
+}
+.pay-game-description{
+    color: #534c64;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.pay-game-img, .pay-game-content{
+    width: 50%;
+}
+.pay-game-first-img{
+    width: 100%;
+}
+.pay-game-second-img{
+    position: relative;
+    margin-top: -200px;
+    margin-left: -120px;
+}
 
+/* ------------Play-instant section style end---------------- */
+/*--------------- list of game section style start-------------- */
+.listOf-game{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+.game-info-container{
+    display: flex;
+    align-items: center;
+    transition: 0.4s;
+    padding: 10px;
+}
+.game-info-container:hover {
+    border: 1px solid tomato;
+    border-radius: 50px;
+}
+.game-name:hover{
+    color: #F948B2;
+}
+.game-name{
+    color: #0b0223;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 11px;
+}
 
+/*--------------- list of game section style end-------------- */
 
 /* -------------------Responsive layout----------- */
 /* -------------------Responsive layout on mobile----------- */
 @media screen and (max-width:576px) {
     .nav,
-    .main-icons{
+    .main-icons,
+    .play-game-container{
         flex-direction: column;
     }
     .main-menu{
@@ -177,8 +237,20 @@ header{
         flex-direction: column-reverse;
     }
     .banner-content,
-    .banner-img{
+    .banner-img,
+    .pay-game-content{
         width: 100%;
+    }
+    .pay-game-second-img{
+        width: 60%;
+        margin-top: -150px;
+        margin-left: -70px;
+    }
+    .play-game-container{
+        gap: 30px;
+    }   
+    .pay-game-img{
+        width: 60%;
     }
     .banner-content{
         padding-left: 30px;
@@ -187,14 +259,36 @@ header{
         display: grid;
         gap: 150px;
     }
-    
+    .pay-game-content{
+        text-align: center;
+    }
+    .listOf-game{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
 }
 
 /* -------------------Responsive layout on Tablet----------- */
 @media screen and (min-width:577px) and (max-width:992px) {
     .nav,
-    .main-icons{
+    .main-icons,
+    .play-game-container{
         flex-direction: column;
+    }
+    .pay-game-content{
+        text-align: center;
+    }
+    .pay-game-second-img{
+        width: 60%;
+        margin-top: -180px;
+        margin-left: -100px;
+    }
+    .play-game-container{
+        gap: 30px;
+    }   
+    .pay-game-img{
+        width: 60%;
     }
     .main-menu{
         padding: 50px 0px;
@@ -207,12 +301,20 @@ header{
         width: 100%;
     }
     .banner-content{
-        padding-left: 30px;
+        padding-left: 300px;
     }
     .online-game-item{
         display: grid;
-        row-gap: 150px ;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
     } 
+    .pay-game-content{
+        width: 100%;
+    }
+    .listOf-game{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
     
-
 }
