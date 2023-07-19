@@ -226,9 +226,11 @@ header{
     background-color: #0b0223;
     padding: 120px 0px;
     margin: 0 auto;
+    margin-top: 80px;
 }
 .footer-logo{
     display: flex;
+    justify-content: center;
 }
 .footer-logo-text{
         color:#fff;
@@ -237,9 +239,16 @@ header{
         font-weight: 700;
         padding-left: 20px;
 }
+.footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
 .footer-menu ul{
     display: flex;
     padding: 60px 0px;
+    text-align: center;
+    justify-content: center;
 }
 .footer-menu ul li{
     list-style: none;
@@ -253,6 +262,7 @@ header{
 }
 .footer-social-icon ul{
     display: flex;
+    justify-content: center;
 }
 .footer-social-icon li{
     list-style: none;
@@ -313,6 +323,23 @@ font-weight: 500;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+    }
+    .footer-menu ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-menu li{
+        padding-bottom:20px;
+
+    }
+    .footer-social-icon ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    #footer-menu ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
