@@ -41,7 +41,8 @@ header{
     justify-content: space-between;
     padding: 50px 0px;
     background-color: #fff;
-    align-items: center;
+    align-items: center;background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .main-icons{
     display: flex;
@@ -225,7 +226,6 @@ header{
 .footer{
     background-color: #0b0223;
     padding: 120px 0px;
-    margin: 0 auto;
     margin-top: 80px;
 }
 .footer-logo{
@@ -379,8 +379,7 @@ font-weight: 500;
     }
     .online-game-item{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: 100vh;
+        gap: 150px;
     } 
     .pay-game-content{
         width: 100%;
